@@ -1,0 +1,14 @@
+body {
+	font-family: Helvetica;
+}
+body * {
+	-webkit-user-select: none;/*禁止用户选中文字*/
+}
+a,input,button {
+	-webkit-tap-highlight-color: rgba(0,0,0,.2); /* 去掉点击的高亮颜色 */
+}
+input,button {
+	-webkit-appearance: none;
+	border-radius: 0;
+	/* 按钮圆角的清除 */
+}
