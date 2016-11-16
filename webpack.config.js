@@ -27,6 +27,11 @@ module.exports = {
                 test: /\.css$/,
                 loader:  ExtractTextPlugin.extract("style-loader", "css-loader")
             },
+            {
+                test: /.js$/,
+                loaders: ['babel?{"presets":["es2015"]}'],
+                exclude: "/node_modules/",
+            }
         ]
     },
     plugins: [
